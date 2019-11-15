@@ -18,6 +18,6 @@ main()
     printf("dights=");
     for(i=0;i<10;i++)
     printf("The number of 0 is:%d",ndight[i]);
-    printf("and the number of a is:%d\n",nwhite+nother);
+    printf("and the number of a is:%d\n",nwhite);
     return
 }
