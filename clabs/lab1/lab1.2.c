@@ -1,26 +1,17 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+main()
+{
+    int fahr,celsius;
+    int lower,upper,step;
 
-int main(void){
-    int n;
-    int i=0;
-    int a[100];
-    int count=0;
-    printf("give a positive number:\n");
-    scanf("%d",&n);
-    printf(":");
-    while(n){
-        a[i]=n%2;
-        i++;
-        n/=2;
+    lower = 0;
+    upper = 300;
+    step = 20;
+
+    fahr = lower;
+    while(fahr <= upper){
+        celsius = 5 * (fahr-32)/9;
+        printf("%d\t%d\n",fahr,celsius);
+        fahr = fahr + step;
     }
-    for(int j=i-1;j>=0;j--){
-        printf("%d",a[j]);
-        if(a[j]==1){
-            count++;
-        }
-    }
-    printf("\n\"1\"%d\n",count);
-    system("pause");
-    return 0;
 }
