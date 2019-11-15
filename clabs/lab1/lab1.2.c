@@ -6,11 +6,11 @@ int main(void){
     int i=0;
     int a[100];
     int count=0;
-    printf(":\n")
+    printf("give a positive number:\n");
     scanf("%d",&n);
-    printf(":")
+    printf(":");
     while(n){
-        a[i]=n%2
+        a[i]=n%2;
         i++;
         n/=2;
     }
@@ -21,6 +21,6 @@ int main(void){
         }
     }
     printf("\n\"1\"%d\n",count);
-    system("pause")
+    system("pause");
     return 0;
 }
